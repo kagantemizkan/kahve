@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahveci Dükkanı Admin Paneli</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2em;
+    }
+
+    .form-container {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+      margin: 1em;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5em;
+    }
+
+    input {
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5em;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Admin Paneli</h1>
+  </header>
+
+  <section>
+    <div class="form-container">
+      <h2>Duyuru Ekle</h2>
+      <form>
+        <label for="duyuru">Duyuru:</label>
+        <input type="text" id="duyuru" name="duyuru" required>
+
+        <button type="submit">Ekle</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h2>Kahve Çeşidi Ekle</h2>
+      <form>
+        <label for="kahveAdi">Kahve Adı:</label>
+        <input type="text" id="kahveAdi" name="kahveAdi" required>
+
+        <label for="fiyat">Fiyat:</label>
+        <input type="number" id="fiyat" name="fiyat" required>
+
+        <button type="submit">Ekle</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
