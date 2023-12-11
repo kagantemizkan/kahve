@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Latte</title>
+    <title>Chai Tea Latte</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -90,13 +90,13 @@
 
 
             <div class="product-image" style="margin-top: 90px; margin-bottom: 90px; margin-right: 75px;">
-                <img width="550" height="550" src="./images/img-2.png" alt="Ürün Resmi">
+                <img width="550" height="550" src="./images/chaiTeaLatte.jpeg" alt="Ürün Resmi">
             </div>
 
             <div class="product-details" style="padding: 20px;">
-                <h2 id="product-name" style="color: #333; font-size: 28px;">Ürün Adı</h2>
+                <h2 id="product-name" style="color: #333; font-size: 28px;">Chai Tea Latte</h2>
                 <h2 style="color: #555; font-size: 18px;">$2.99</h2>
-                <h2 style="color: #777; font-size: 18px;">Espresso ve buharlanmış sütün uyumlu karışımının yarattığı pürüzsüz ve kadifemsi dokuya sahip olan Latte'mizin tadını çıkarın.</h2>
+                <h2 style="color: #777; font-size: 18px;">Yoğun baharatların dans ettiği, sıcak Chai çayının mükemmel dengeyle karıştığı süt köpüğü, Chai Tea Latte'mizde bir araya geliyor. Her yudumda sizi saran sıcaklık ve zengin lezzet, içimizi ısıtan bir keyif sunuyor.</h2>
             </div>
         </div>
     </div>
@@ -168,23 +168,6 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <!-- JavaScript -->
-    <script>
-        // JavaScript ile URL üzerinden ürün adını al
-        document.getElementById('product-name').innerText = getProductNameFromUrl();
-
-        function getProductNameFromUrl() {
-            // URL'yi al
-            var url = window.location.href;
-            // URL'deki son bölümü (sayfa adını) al
-            var pageName = url.substring(url.lastIndexOf('/') + 1);
-            // .html uzantısını kaldır
-            var productName = pageName.replace('.html', '');
-
-            // İlk harfi büyük yap ve geri döndür
-            return productName.charAt(0).toUpperCase() + productName.slice(1);
-        }
-    </script>
 
 </body>
 
